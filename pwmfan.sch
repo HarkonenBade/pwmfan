@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:pwmfan-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -103,17 +102,6 @@ Text GLabel 10350 4650 2    50   Input ~ 0
 SWDCLK
 Text GLabel 10350 4750 2    50   Input ~ 0
 SWDIO
-$Comp
-L MCU_ST_STM32F0:STM32F042F6Px U2
-U 1 1 5E33A44F
-P 1900 2000
-F 0 "U2" H 1900 2100 50  0000 C CNN
-F 1 "STM32F042F6Px" H 1900 2000 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 1400 1300 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 1900 2000 50  0001 C CNN
-	1    1900 2000
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR01
 U 1 1 5E33A506
@@ -944,4 +932,15 @@ Wire Notes Line
 	3600 2800 3600 550 
 Text Notes 3700 700  0    50   ~ 0
 Display
+$Comp
+L MCU_ST_STM32F0:STM32F042F6Px U2
+U 1 1 5E33A44F
+P 1900 2000
+F 0 "U2" H 1900 2100 50  0000 C CNN
+F 1 "STM32F042F6Px" H 1900 2000 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 1400 1300 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 1900 2000 50  0001 C CNN
+	1    1900 2000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
